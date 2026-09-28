@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets - Market Overview & Stock Screener",
+  "description": "Real-time market quotes, indices performance, top movers, technical analysis ratings, and asset screeners across global markets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

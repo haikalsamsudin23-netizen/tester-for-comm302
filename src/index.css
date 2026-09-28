@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tv-blue: #2962ff;
+  --color-tv-blueHover: #1e53e5;
+  --color-tv-green: #089981;
+  --color-tv-greenLight: #e8f6f3;
+  --color-tv-red: #f23645;
+  --color-tv-redLight: #fdecee;
+  --color-tv-grayLight: #f0f3fa;
+  --color-tv-grayHover: #f7f9fc;
+  --color-tv-grayBorder: #e0e3eb;
+  --color-tv-textMain: #131722;
+  --color-tv-textMuted: #787b86;
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes flashGreen {
+  0% { background-color: rgba(8, 153, 129, 0.25); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flashRed {
+  0% { background-color: rgba(242, 54, 69, 0.25); }
+  100% { background-color: transparent; }
+}
+
+.flash-green {
+  animation: flashGreen 1s ease-out;
+}
+
+.flash-red {
+  animation: flashRed 1s ease-out;
+}
